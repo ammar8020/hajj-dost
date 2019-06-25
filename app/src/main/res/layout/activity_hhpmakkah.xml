@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/appBackground"
+    tools:context=".HHPmedinaActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimary"
+        app:title="HHP of Makkah"
+        app:titleTextColor="#fff"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/masjid_al_haramm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="Al-Haram Mosque"
+                android:textSize="28dp"
+                android:textStyle="bold"
+                android:textColor="@color/textColor"
+                android:background="@color/listBackground"
+                android:gravity="center"
+                />
+
+            <TextView
+                android:id="@+id/masjid_aishaa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:padding="8dp"
+                android:text="Aisha Mosque"
+                android:textSize="28dp"
+                android:textStyle="bold"
+                android:textColor="@color/textColor"
+                android:background="@color/listBackground"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/masjid_jinn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:padding="8dp"
+                android:text="Al-Jin Mosque"
+                android:textSize="28dp"
+                android:textStyle="bold"
+                android:textColor="@color/textColor"
+                android:background="@color/listBackground"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/masjid_bilall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:padding="8dp"
+                android:text="Bilal Mosque"
+                android:textSize="28dp"
+                android:textStyle="bold"
+                android:textColor="@color/textColor"
+                android:background="@color/listBackground"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/masjid_al_khayff"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:padding="8dp"
+                android:text="Al-Khayf Mosque"
+                android:textSize="28dp"
+                android:textStyle="bold"
+                android:textColor="@color/textColor"
+                android:background="@color/listBackground"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/muzdalifahh"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:padding="8dp"
+                android:text="Muzdalifah"
+                android:textSize="28dp"
+                android:textStyle="bold"
+                android:textColor="@color/textColor"
+                android:background="@color/listBackground"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/jamaratt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:padding="8dp"
+                android:text="Jamarat"
+                android:textSize="28dp"
+                android:textStyle="bold"
+                android:textColor="@color/textColor"
+                android:background="@color/listBackground"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/mount_abu_qubaiss"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:padding="8dp"
+                android:text="Mount Abu Qubais"
+                android:textSize="28dp"
+                android:textStyle="bold"
+                android:textColor="@color/textColor"
+                android:background="@color/listBackground"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/birth_placee"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:padding="8dp"
+                android:text="Birth Place of the Holy Prophet"
+                android:textSize="28dp"
+                android:textStyle="bold"
+                android:textColor="@color/textColor"
+                android:background="@color/listBackground"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/cave_hiraa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:padding="8dp"
+                android:text="Cave of Hira"
+                android:textSize="28dp"
+                android:textStyle="bold"
+                android:textColor="@color/textColor"
+                android:background="@color/listBackground"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/cave_thaurr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:padding="8dp"
+                android:text="Cave of Thaur"
+                android:textSize="28dp"
+                android:textStyle="bold"
+                android:textColor="@color/textColor"
+                android:background="@color/listBackground"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/jabal_nourr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:padding="8dp"
+                android:text="Jabal-e-Nour"
+                android:textSize="28dp"
+                android:textStyle="bold"
+                android:textColor="@color/textColor"
+                android:background="@color/listBackground"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/janat_almuallaa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:padding="8dp"
+                android:text="Jannat Al-Mualla"
+                android:textSize="28dp"
+                android:textStyle="bold"
+                android:textColor="@color/textColor"
+                android:background="@color/listBackground"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/jamal_alrahmahh"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:padding="8dp"
+                android:text="Jabal Al-Rahmah"
+                android:textSize="28dp"
+                android:textStyle="bold"
+                android:textColor="@color/textColor"
+                android:background="@color/listBackground"
+                android:gravity="center"/>
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adViewHHPmakkeh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-1621044802376539/9545181056">
+    </com.google.android.gms.ads.AdView>
+
+</LinearLayout>

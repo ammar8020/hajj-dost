@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/appBackground"
+    tools:context=".RegistrationActivity"
+    android:orientation="vertical"
+    android:id="@+id/registration_fragment_contaiser">
+
+    <!--<android.support.v7.widget.Toolbar-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="50dp"-->
+        <!--android:background="@color/colorPrimary"-->
+        <!--app:title="Registration"-->
+        <!--app:titleTextColor="@color/textColor"-->
+        <!--&gt;</android.support.v7.widget.Toolbar>-->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="8dp"
+            >
+
+            <EditText
+                android:id="@+id/full_name_ET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/textColor2"
+                android:hint="Full Name"
+                />
+
+            <EditText
+                android:id="@+id/age_ET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:hint="Age in Years(such as '25')"
+                android:textColor="@color/textColor2"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/address_ET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/textColor2"
+                android:hint="Address" />
+            <EditText
+                android:id="@+id/phoneNum_ET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/textColor2"
+                android:inputType="number"
+                android:hint="Phone number" />
+
+            <AutoCompleteTextView
+                android:id="@+id/group_name_ET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/textColor2"
+                android:hint="Your Group Name" />
+
+            <TextView
+                android:id="@+id/create_group"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_gravity="center_horizontal"
+                android:text="Creat New Group"
+                android:background="@color/listBackground"
+                android:textColor="@color/textColor"
+                android:textSize="18dp"
+                android:padding="4dp"/>
+
+            <RadioGroup
+                android:id="@+id/radio_group"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/male_RB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:textColor="#ff4182"
+                    android:text="Male" />
+
+                <RadioButton
+                    android:id="@+id/fe_male_RB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ff4182"
+                    android:text="Female" />
+
+                <RadioButton
+                    android:id="@+id/other_RB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ff4182"
+                    android:text="Other" />
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/register_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:textSize="20dp"
+                android:backgroundTint="@color/listBackground"
+                android:text="Register"
+                android:textColor="@color/textColor"/>
+
+            <Button
+                android:id="@+id/btn_chatroom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="2dp"
+                android:textSize="20dp"
+                android:backgroundTint="@color/listBackground"
+                android:text="Group Chat"
+                android:textColor="@color/textColor"/>
+
+            <com.google.android.gms.ads.AdView
+                xmlns:ads="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/adViewRegistration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                ads:adSize="BANNER"
+                ads:adUnitId="ca-app-pub-1621044802376539/9545181056">
+            </com.google.android.gms.ads.AdView>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

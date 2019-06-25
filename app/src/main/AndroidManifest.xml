@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.pakiboy612gmailtest.hajjdost">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.defence930gmail.hajjmaullim.permission.MAPS_RECEIVE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permissions.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.SET_ALARM" />
+
+    <permission
+        android:name="com.pakiboy612gmailtest.hajjdost.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" />
+
+
+
+    <!--<uses-permission android:name="your.package.name.permission.MAPS_RECEIVE"/>-->
+
+    <!--<uses-permission android:name="android.permission.INTERNET" />-->
+    <!--<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />-->
+    <!--<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />-->
+    <!--<uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />-->
+    <!--<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />-->
+    <!--<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />-->
+
+
+
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+
+
+    <!--<uses-sdk android:minSdkVersion="21" android:targetSdkVersion="28" />-->
+
+
+
+    <application
+        android:name=".UserClient"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+
+
+
+
+
+        <!--<meta-data-->
+            <!--android:name="com.google.android.gms.version"-->
+            <!--android:value="@integer/google_play_services_version" />-->
+
+        <!--&lt;!&ndash;AIzaSyBf3tEmdR18S-2v0E1i1x0oqcXJ9imntT4&ndash;&gt;-->
+        <!--<meta-data-->
+            <!--android:name="com.google.android.geo.API_KEY"-->
+            <!--android:value="AIzaSyB0ExBcnjhA4x6dpS_PCPFP1smVWIETcsQ" />-->
+
+
+
+
+
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="REPLACE_WITH_YOUR_ADMOB_APP_ID" />
+
+        <service android:name=".UpdateLatLangService" />
+
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait">
+
+             <!--<intent-filter> -->
+             <!--<action android:name="android.intent.action.MAIN" /> -->
+
+
+             <!--<category android:name="android.intent.category.LAUNCHER" /> -->
+             <!--</intent-filter> -->
+        </activity>
+        <activity
+            android:name=".RegistrationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SplashActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ProfileActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".EditProfileActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".GroupListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".HollyPlacesActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".HHPmeccaActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".HHPmedinaActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".HHPdetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".GroupChatActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".HomeLocationActivityNew"
+            android:screenOrientation="portrait" />
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/. 
+        -->
+
+
+
+
+        <!--AIzaSyAqXlBp6zYMOumUffHhoPby5HvF0nKckSE-->
+
+        <!--<meta-data-->
+            <!--android:name="com.google.android.geo.API_KEY"-->
+            <!--android:value="@string/google_maps_key" />-->
+
+        <activity
+            android:name=".HomeLocatActivity"
+            android:label="@string/title_activity_home_locat"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".CurrentLocationActivity"
+            android:label="@string/title_activity_current_location"
+            android:screenOrientation="portrait" />
+        <activity android:name=".PrayActivity" />
+        <activity
+            android:name=".HHPlocationActivity"
+            android:label="@string/title_activity_hhplocation" />
+        <activity android:name=".HajjGuideActivity" />
+        <activity android:name=".HajjGuidDetailActivity" />
+        <activity android:name=".CurrentLocationActivityNew" />
+        <activity android:name=".FindFriendsActivity" />
+        <activity android:name=".HelpActivity" />
+        <activity android:name=".LeadingActivity" />
+        <activity android:name=".RepeatingActivity"></activity>
+        <receiver android:name=".NotificationReceiver"/>
+
+
+
+
+
+
+
+        <activity android:name=".MapsActivity">
+
+            <!--<intent-filter>-->
+            <!--<action android:name="android.intent.action.MAIN" />-->
+
+
+            <!--<category android:name="android.intent.category.LAUNCHER" />-->
+            <!--</intent-filter>-->
+
+        </activity>
+        <activity android:name=".MainActivity2">
+            <!--<intent-filter>-->
+                <!--<action android:name="android.intent.action.MAIN" />-->
+
+                <!--<category android:name="android.intent.category.LAUNCHER" />-->
+            <!--</intent-filter>-->
+
+
+
+
+            <meta-data
+                android:name="com.google.android.gms.version"
+                android:value="@integer/google_play_services_version" />
+
+        </activity>
+
+        <service android:name=".GeofenceTransitionService" />
+
+
+
+
+
+
+
+
+        <activity android:name=".ui.MainActivity">
+        </activity>
+        <activity android:name=".ui.LoginActivity" >
+            <!--<intent-filter>-->
+                <!--<action android:name="android.intent.action.MAIN" />-->
+
+                <!--<category android:name="android.intent.category.LAUNCHER" />-->
+            <!--</intent-filter>-->
+    </activity>
+        <activity android:name=".ui.RegisterActivity" />
+        <activity android:name=".ui.ChatroomActivity" />
+        <activity android:name=".ui.ProfileActivity"/>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_api_key"/>
+
+        <!--<meta-data-->
+            <!--android:name="com.google.android.gms.version"-->
+            <!--android:value="@integer/google_play_services_version" />-->
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <service
+            android:name=".services.LocationService"
+            android:stopWithTask="true" />
+
+
+
+
+    </application>
+
+</manifest>

@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileActivity"
+    android:orientation="vertical"
+    android:background="@color/appBackground"
+    >
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimary"
+        app:title="Profile"
+        app:titleTextColor="@color/textColor"
+        ></android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:padding="16dp"
+           android:orientation="vertical">
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="8dp">
+               <TextView
+                   android:layout_width="0dp"
+                   android:layout_height="match_parent"
+                   android:layout_weight=".35"
+                   android:text="Name: "
+                   android:gravity="end"
+                   android:textSize="20dp"
+                   android:textStyle="bold"
+                   />
+               <TextView
+                   android:id="@+id/name_tv"
+                   android:layout_width="0dp"
+                   android:layout_height="wrap_content"
+                   android:layout_weight=".8"
+                   android:text="Mubeen Talha"
+                   android:textSize="20dp"
+                   android:textColor="@color/textColor2"
+                   />
+           </LinearLayout>
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="8dp"
+               >
+               <TextView
+                   android:layout_width="0dp"
+                   android:layout_height="wrap_content"
+                   android:layout_weight=".35"
+                   android:text="Age: "
+                   android:textSize="20dp"
+                   android:gravity="end"
+                   android:textStyle="bold"
+                   />
+               <TextView
+                   android:id="@+id/age_tv"
+                   android:layout_width="0dp"
+                   android:layout_height="wrap_content"
+                   android:layout_weight=".8"
+                   android:text="22 Years old"
+                   android:textSize="20dp"
+                   android:textColor="@color/textColor2"
+                   />
+           </LinearLayout>
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="8dp">
+               <TextView
+                   android:layout_width="0dp"
+                   android:layout_height="wrap_content"
+                   android:layout_weight=".35"
+                   android:text="Gender: "
+                   android:textSize="20dp"
+                   android:gravity="end"
+                   android:textStyle="bold"
+                   />
+               <TextView
+                   android:id="@+id/gender_tv"
+                   android:layout_width="0dp"
+                   android:layout_height="wrap_content"
+                   android:layout_weight=".8"
+                   android:text="male"
+                   android:textSize="20dp"
+                   android:textColor="@color/textColor2"
+                   />
+           </LinearLayout>
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="8dp">
+               <TextView
+                   android:layout_width="0dp"
+                   android:layout_height="wrap_content"
+                   android:layout_weight=".35"
+                   android:text="Address: "
+                   android:textSize="20dp"
+                   android:gravity="end"
+                   android:textStyle="bold"
+                   android:maxLines="1"
+                   />
+               <TextView
+                   android:id="@+id/address_tv"
+                   android:layout_width="0dp"
+                   android:layout_height="wrap_content"
+                   android:layout_weight=".8"
+                   android:text="Sahiwal"
+                   android:textSize="20dp"
+                   android:textColor="@color/textColor2"
+                   />
+           </LinearLayout>
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="8dp">
+               <TextView
+                   android:layout_width="0dp"
+                   android:layout_height="wrap_content"
+                   android:layout_weight=".35"
+                   android:text="Number: "
+                   android:textSize="20dp"
+                   android:gravity="end"
+                   android:textStyle="bold"
+                   />
+               <TextView
+                   android:id="@+id/phNum_tv"
+                   android:layout_width="0dp"
+                   android:layout_height="wrap_content"
+                   android:layout_weight=".8"
+                   android:text="03000000000"
+                   android:textSize="20dp"
+                   android:textColor="@color/textColor2"
+                   />
+           </LinearLayout>
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="8dp">
+               <TextView
+                   android:layout_width="0dp"
+                   android:layout_height="wrap_content"
+                   android:layout_weight=".35"
+                   android:text="Group: "
+                   android:textSize="20dp"
+                   android:gravity="end"
+                   android:textStyle="bold"
+                   />
+               <TextView
+                   android:id="@+id/group_tv"
+                   android:layout_width="0dp"
+                   android:layout_height="wrap_content"
+                   android:layout_weight=".8"
+                   android:text="Eagles Group"
+                   android:textSize="20dp"
+                   android:textColor="@color/textColor2"
+                   />
+           </LinearLayout>
+           <Button
+               android:id="@+id/edit_profile_btn"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Edit Profile"
+               android:textSize="20dp"
+               android:layout_gravity="center_horizontal"
+               android:layout_marginTop="16dp"
+               android:backgroundTint="@color/listBackground"
+               android:textColor="@color/textColor"
+               />
+
+           <com.google.android.gms.ads.AdView
+               xmlns:ads="http://schemas.android.com/apk/res-auto"
+               android:id="@+id/adViewProfile"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_gravity="center_horizontal"
+               ads:adSize="BANNER"
+               ads:adUnitId="ca-app-pub-1621044802376539/9545181056">
+           </com.google.android.gms.ads.AdView>
+
+       </LinearLayout>
+
+    </ScrollView>
+
+
+
+</LinearLayout>

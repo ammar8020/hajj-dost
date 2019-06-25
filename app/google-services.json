@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "710459982991",
+    "firebase_url": "https://hd-fyp-test.firebaseio.com",
+    "project_id": "hd-fyp-test",
+    "storage_bucket": "hd-fyp-test.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:710459982991:android:8d540156e993967f",
+        "android_client_info": {
+          "package_name": "com.pakiboy612gmailtest.hajjdost"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "710459982991-44s9i7c78loa7bjcfp9tmn9esfr82hv6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAnEJ8m_yA2_DhVbgFjOsKXA-g09rHww0Y"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

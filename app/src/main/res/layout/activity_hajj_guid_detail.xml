@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/appBackground"
+    tools:context=".HajjGuidDetailActivity">
+
+    <TextView
+        android:id="@+id/heading_hgd_tv"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="heading"
+        android:textSize="28dp"
+        android:padding="4dp"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/textColor"
+        />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        >
+        <TextView
+            android:id="@+id/detail_hgd_tv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="8dp"
+            android:textSize="18dp"
+            android:text="here the detail of step will display...."
+            android:background="@color/listBackground"
+            android:textColor="@color/textColor"
+            />
+    </ScrollView>
+
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adViewHajjGuideDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-1621044802376539/9545181056">
+    </com.google.android.gms.ads.AdView>
+
+</LinearLayout>

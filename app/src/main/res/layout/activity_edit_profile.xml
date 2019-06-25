@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/appBackground"
+    tools:context=".EditProfileActivity">
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimary"
+        app:title="Edit Profile"
+        app:titleTextColor="@color/textColor"
+        >
+    </android.support.v7.widget.Toolbar>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <EditText
+                android:id="@+id/full_name_ETT"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/textColor2"
+                android:hint="Full Name"
+                />
+
+            <EditText
+                android:id="@+id/age_ETT"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:hint="Age in Years(such as '25')"
+                android:textColor="@color/textColor2"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/address_ETT"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/textColor2"
+                android:hint="Address" />
+
+            <EditText
+                android:id="@+id/number_ETT"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/textColor2"
+                android:inputType="number"
+                android:hint="Phone Number" />
+
+            <AutoCompleteTextView
+                android:id="@+id/group_name_ETT"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/textColor2"
+                android:hint="Your Group Name" />
+
+            <TextView
+                android:id="@+id/create_groupT"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:text="Creat New Group"
+                android:layout_gravity="center_horizontal"
+                android:background="@color/listBackground"
+                android:padding="2dp"
+                android:textColor="@color/textColor"
+                android:textSize="18dp" />
+
+            <RadioGroup
+                android:id="@+id/radio_groupT"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/male_RBT"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:textColor="#ff4182"
+                    android:text="Male" />
+
+                <RadioButton
+                    android:id="@+id/fe_male_RBT"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ff4182"
+                    android:text="Female" />
+
+                <RadioButton
+                    android:id="@+id/other_RBT"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ff4182"
+                    android:text="Other" />
+            </RadioGroup>
+            <Button
+                android:id="@+id/update_btnT"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:backgroundTint="@color/listBackground"
+                android:text="update"
+                android:textColor="@color/textColor"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="16dp"
+                />
+
+
+            <com.google.android.gms.ads.AdView
+                xmlns:ads="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/adViewEditProfile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                ads:adSize="BANNER"
+                ads:adUnitId="ca-app-pub-1621044802376539/9545181056">
+            </com.google.android.gms.ads.AdView>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</LinearLayout>
